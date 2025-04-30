@@ -9,10 +9,16 @@
     <script src="https://cdn.tailwindcss.com"></script> 
 </head>
 <body class="bg-gray-300 flex items-center justify-center min-h-screen">
-    <div class="w-full sm:w-[90%] md:w-[70%] lg:w-[45%] bg-white p-6 rounded-lg shadow-2xl glow border-8 border-gray-800">  <!-- main clculator box -->  
+    <div id="calculator" class="w-full sm:w-[90%] md:w-[70%] lg:w-[45%] bg-white p-6 rounded-lg shadow-2xl glow border-8 border-gray-800">  <!-- main clculator box -->  
         <h2 class="text-4xl font-bold text-center mb-4 p-4 bg-gray-600 hover:bg-gray-800 text-3xl text-white rounded">Calculator</h2>
         
-        <input id="display" type="text" class="w-full mb-4 p-3  text-right border rounded text-5xl"/>
+        <!-- <input id="display" type="text" class="w-full mb-4 p-3  text-right border rounded text-5xl"/> -->
+
+        <div class="flex justify-between mb-4">
+            <input id="display" type="text" class="w-full p-3 text-right border rounded text-5xl"/>
+            <button id="darkModeToggle" class="ml-4 p-2 bg-gray-600 hover:bg-gray-800 text-white rounded">🌙</button>
+        </div>
+
         <div id="buttons" class="flex flex-col gap-2">
             <!-- Row 1 -->
             <div class="grid grid-cols-5 gap-2">
