@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <!-- <script src="tailwind.config.ts"></script> -->
     <script src="https://cdn.tailwindcss.com"></script> 
 </head>
-<body class="bg-gray-300 flex items-center justify-center min-h-screen">
+<body id="body" class="bg-gray-300 flex items-center justify-center min-h-screen">
     <div id="calculator" class="w-full sm:w-[90%] md:w-[70%] lg:w-[45%] bg-white p-6 rounded-lg shadow-2xl glow border-8 border-gray-800">  <!-- main clculator box -->  
         <h2 class="text-4xl font-bold text-center mb-4 p-4 bg-gray-600 hover:bg-gray-800 text-3xl text-white rounded">Calculator</h2>
         
@@ -25,7 +24,7 @@
                 <button class="p-4 bg-gray-600 hover:bg-gray-800 text-3xl text-white rounded">7</button>
                 <button class="p-4 bg-gray-600 hover:bg-gray-800 text-3xl text-white rounded">8</button>
                 <button class="p-4 bg-gray-600 hover:bg-gray-800 text-3xl text-white rounded">9</button>
-                <button class="p-4 bg-red-500 hover:bg-red-800 text-3xl text-white rounded">C</button>
+                <button class="p-4 bg-red-500 hover:bg-red-800 text-3xl text-white rounded" id="clearButton">C</button>
                 <button class="p-4 bg-orange-400 hover:bg-orange-600 text-4xl text-white rounded">/</button>
             </div>
         
@@ -52,7 +51,7 @@
                 <button class="p-4 bg-gray-600 hover:bg-gray-800 text-3xl text-white rounded">00</button>
                 <button class="p-4 bg-gray-600 hover:bg-gray-800 text-3xl text-white rounded">0</button>
                 <button class="p-4 bg-gray-600 hover:bg-gray-800 text-4xl text-white rounded">.</button>
-                <button class="p-4 bg-green-700 hover:bg-green-900 text-4xl text-white rounded">=</button>
+                <button class="p-4 bg-green-700 hover:bg-green-900 text-4xl text-white rounded" id="equalsButton">=</button>
                 <button class="p-4 bg-orange-400 hover:bg-orange-600 text-5xl text-white rounded">+</button>
             </div>
         </div>
@@ -61,4 +60,4 @@
     </div><!-- main clculator box -->
     
     <script src="script.js"></script>
-</body>
+</body> 
